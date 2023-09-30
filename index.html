@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<title>Aaron Gao</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+<style>
+.zoom {
+	transition: transform .2s;
+	margin: 0 auto;
+}
+
+.zoom:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2);
+}
+</style>
+<body>
+
+	<!-- Navigation Bar -->
+	<div class="w3-top w3-bar w3-white w3-card w3-padding w3-mobile">
+		<img class="zoom w3-bar-item" onclick="loadHome()"
+			src="images/personalWebsiteLogo.png" alt="Personal Website Logo"
+			style="width: 5%; cursor: pointer;"> <img
+			class="w3-bar-item zoom" onclick="loadLinkedin()"
+			src="images/linkedinLogo.png" alt="Linkedin Logo"
+			style="width: 5%; cursor: pointer;"> <img
+			class="w3-bar-item zoom" onclick="loadGithub()" src="images/githubLogo.png"
+			alt="Github Logo" style="width: 5%; cursor: pointer;">
+
+		<div class="w3-right w3-mobile">
+			<div
+				class="w3-bar-item w3-bottombar w3-border-white w3-hover-border-grey"
+				onclick="loadAbout()" style="cursor: pointer; font-size: 1vw;">ABOUT</div>
+			<div
+				class="w3-bar-item w3-bottombar w3-border-white w3-hover-border-grey"
+				onclick="loadExperience()" style="cursor: pointer; font-size: 1vw;">EXPERIENCE</div>
+			<div
+				class="w3-bar-item w3-bottombar w3-border-white w3-hover-border-grey"
+				onclick="loadProjects()" style="cursor: pointer; font-size: 1vw;">PROJECTS</div>
+			<div
+				class="w3-bar-item w3-bottombar w3-border-white w3-hover-border-grey"
+				onclick="loadResume()" style="cursor: pointer; font-size: 1vw;">RESUME</div>
+		</div>
+	</div>
+
+	<!-- Home Page -->
+	<div id="home" class="w3-display-container" style="height: 100vh;">
+		<img src="images/profileBackground.jpg" alt="Background Image"
+			style="width: 100%;"> <img src="images/profile.jpg"
+			class="w3-circle w3-display-left" alt="Personal Profile Image"
+			style="width: 20%; left: 20%;">
+		<div class="w3-container w3-display-right" style="right: 30%;">
+			<h2 style="font-size: 2vw; color: black;">Hi There! My name is</h2>
+			<h1 style="font-size: 3vw; color: black;">Aaron Gao</h1>
+
+
+		</div>
+	</div>
+	
+	<!-- About Me -->
+	<div id="about" class="w3-display-container w3-white" style="min-height: 120vh;">
+		<img class="w3-display-left w3-circle" src="images/profileSuit.jpg"	alt="Profile Picture" style="width: 35%; left: 8%; top: 55%;">
+		<div class="w3-display-topmiddle" style="font-size: 3vw; top: 10%;">
+			ABOUT ME
+		</div>
+
+		<div class="w3-display-topright"
+			style="font-size: 1.2vw; left: 55%; right: 5%; top: 25%;">
+			Hi! My name is Aaron and I am a first year student at the <b>University of Waterloo</b> pursuing a degree in Computer Science. <br> <br>
+			I have competed in over 50 programming contests utilizing a wide array of languages including Java, C++, and Python. I also enjoy creating full stack web applications using a variety of libraries, frameworks, and developer tools. <br> <br> 
+			When I am not programming, I enjoy weightlifting, exploring the stock market, and reading history! <br> <br> 
+			<b>Libraries and Frameworks</b> <br> Java, Python, C++, SQL, JavaScript, HTML/CSS, Racket, LaTeX <br> <br> 
+			<b>Technologies</b>	<br> Spring Boot, Node.js, Express.js, React, PostgreSQL <br> <br> 
+			<b> Developer Tools </b> <br> 
+			Git, AWS, Postman, VS Code, Visual Studio, PyCharm, Eclipse <br> <br> </b>
+			<b>Currently seeking internships for Summer 2024.</b>
+		</div>
+
+	</div>
+
+	<!-- Experience -->
+
+	<!-- Business SHSM/Council -->
+	<div id="experience" class="w3-display-container w3-grey"
+		style="min-height: 200vh;">
+		<div class="w3-display-topmiddle" style="font-size: 3vw; top: 5%">EXPERIENCE</div>
+
+		<div class="w3-display-container w3-display-topmiddle w3-white"
+			style="top: 12%; width: 80%; height: 40vh;">
+			<img class="w3-display-left" src="images/businessCouncilLogo.png"
+				alt="Business Council Logo"
+				style="height: 35vh; left: 2%; top: 50%;">
+			<div class="w3-display-left"
+				style="font-size: 1.4vw; left: 33%; top: 20%; right: 0%;">
+				<b>President of Business Council @ A.Y. Jackson Secondary School</b>
+			</div>
+			<div class="w3-display-left"
+				style="font-size: 1.2vw; top: 32%; left: 55%;">June 2022 -
+				June 2023</div>
+			<div class="w3-display-left"
+				style="font-size: 1.2vw; top: 55%; left: 35%;">
+				&#x2022; Organized annual financial workshops, weekly lectures, and
+				outreach events. <br> &#x2022; Trained a 12 person executive
+				team. <br> &#x2022; Grew club membership to 100 participants
+				within one year.
+			</div>
+		</div>
+
+		<!-- Coding Club -->
+		<div class="w3-display-container w3-display-topmiddle w3-white"
+			style="top: 34%; width: 80%; height: 40vh;">
+			<img class="w3-display-left" src="images/CodingClubLogo.png"
+				alt="Coding Club Logo" style="height: 35vh; left: 2%; top: 50%;">
+			<div class="w3-display-left"
+				style="font-size: 1.4vw; left: 33%; top: 20%; right: 0%;">
+				<b>Senior Lecturer of Coding Club @ A.Y. Jackson Secondary
+					School</b>
+			</div>
+			<div class="w3-display-left"
+				style="font-size: 1.2vw; top: 32%; left: 55%;">June 2022 -
+				June 2023</div>
+			<div class="w3-display-left"
+				style="font-size: 1.2vw; top: 55%; left: 35%;">
+				&#x2022; Delivered weekly lectures on competitive programming
+				topics. <br> &#x2022; Led workshops on how to succeed in
+				technical interviews. <br> &#x2022; Grew weekly lecture
+				audience by 50% within one year.
+			</div>
+		</div>
+
+		<!-- Computer Science Tutor-->
+		<div class="w3-display-container w3-display-topmiddle w3-white"
+			style="top: 56%; width: 80%; height: 40vh;">
+			<img class="w3-display-left" src="images/AYJacksonSecondarySchoolLogo.png"
+				alt="A.Y. Jackson Secondary School Logo"
+				style="height: 35vh; left: 2%; top: 50%;">
+			<div class="w3-display-left"
+				style="font-size: 1.4vw; left: 36%; top: 20%; right: 0%;">
+				<b>Computer Science Tutor @ A.Y. Jackson Secondary School</b>
+			</div>
+			<div class="w3-display-left"
+				style="font-size: 1.2vw; top: 32%; left: 55%;">February 2022 -
+				June 2022</div>
+			<div class="w3-display-left"
+				style="font-size: 1.2vw; top: 55%; left: 35%;">
+				&#x2022; Tutored one student throughout the semester. <br>
+				&#x2022; Concepts included Java language features, basic algorithms,
+				and data structures. <br> &#x2022; Supported teacher
+				instruction by delivering over 10 hours worth of lessons.
+			</div>
+		</div>
+
+		<!-- Math Tutor -->
+		<div class="w3-display-container w3-display-topmiddle w3-white"
+			style="top: 78%; width: 80%; height: 40vh;">
+			<img class="w3-display-left" src="images/AYJacksonSecondarySchoolLogo.png"
+				alt="A.Y. Jackson Secondary School Logo"
+				style="height: 35vh; left: 2%; top: 50%;">
+			<div class="w3-display-left"
+				style="font-size: 1.4vw; left: 42%; top: 20%; right: 0%;">
+				<b>Math Tutor @ A.Y. Jackson Secondary School</b>
+			</div>
+			<div class="w3-display-left"
+				style="font-size: 1.2vw; top: 32%; left: 55%;">February 2021 -
+				April 2021</div>
+			<div class="w3-display-left"
+				style="font-size: 1.2vw; top: 55%; left: 35%;">
+				&#x2022; Tutored 5 students throughout the quadmester. <br>
+				&#x2022; Concepts included polynomials, trigonometric identities,
+				and application of functions to real world problems. <br>
+				&#x2022; Supported teacher instruction by delivering 40 hours worth
+				of lessons.
+			</div>
+		</div>
+	</div>
+
+	<!-- Projects -->
+	<div id="projects" class="w3-display-container w3-brown"
+		style="min-height: 100vh;">
+		<div class="w3-display-topmiddle" style="font-size: 3vw; top: 10%">PROJECTS</div>
+
+		<!-- Personal Website -->
+		<div onclick="loadHome()" class="w3-card-4 w3-display-topleft zoom" style="width: 25%; top: 25%; left: 5%; cursor: pointer;">
+			<img src="images/PersonalWebsiteHomepage.png" alt="Personal Website" style="width: 100%;">
+			<div class="w3-container w3-center" style="font-size: 1.5vw;">Personal Website</div>
+			<div class="w3-container w3-center" style="font-size: 1.2vw;">HTML,	CSS, JavaScript</div> 
+			<br>
+			<div class="w3-container w3-left" style="font-size: 1.2vw;">Personal website that shares my projects, experience, and contact information. Utilized HTML/CSS for front-end display and JavaScript for interactive elements.</div>
+		</div>
+
+		<!-- Stock Master -->
+		<div onclick="loadStockMaster()" class="w3-card-4 w3-display-topleft zoom" style="width: 25%; top: 25%; left: 38%; cursor: pointer;">
+			<img src="images/StockMasterHomepage.png" alt="Stock Master"style="width: 100%;">
+			<div class="w3-container w3-center" style="font-size: 1.5vw;">Stock Master</div>
+			<div class="w3-container w3-center" style="font-size: 1.2vw;">Spring Boot, PostgreSQL, JavaScript</div>
+			<br>
+			<div class="w3-container w3-left" style="font-size: 1.2vw">Full stack web application that generates a personally tailored stock portfolio given a user's preference of sector exposure, market cap sizes, and dividend yield.</div>
+		</div>
+	</div>
+
+	<!-- Copyright -->
+	<div class="footer w3-brown w3-center" style="font-size: 1vw;">Copyright
+		&#169; Aaron Gao 2023</div>
+</body>
+</html>
+
+<!-- Website Links -->
+<script>
+	function loadStockMaster() {
+		window.location = "https://github.com/AaronGao2028/stock-master";
+	}
+	function loadLinkedin() {
+		window.location = "https://www.linkedin.com/in/aaron-gao-485268230/";
+	}
+	function loadGithub() {
+		window.location = "https://github.com/AaronGao2028";
+	}
+	function loadEmail() {
+		window.location = "https://mail.google.com/mail/u/0/#inbox";
+	}
+	function loadHome() {
+		window.location = "https://aarongao2028.github.io/personal-website/#home";
+	}
+	function loadAbout() {
+		window.location = "https://aarongao2028.github.io/personal-website/#about";
+	}
+	function loadExperience() {
+		window.location = "https://aarongao2028.github.io/personal-website/#experience";
+	}
+	function loadProjects() {
+		window.location = "https://aarongao2028.github.io/personal-website/#projects";
+	}
+	function loadResume() {
+		window.location = "https://drive.google.com/file/d/1KQiL8WFklauch3ljy6u60lDy594KoGm4/view?usp=sharing";
+	}
+</script>
