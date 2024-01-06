@@ -23,7 +23,7 @@ function loadProjects() {
     window.location = "https://aarongao2028.github.io/personal-website/#projects";
 }
 function loadResume() {
-    window.location = "https://drive.google.com/file/d/1KQiL8WFklauch3ljy6u60lDy594KoGm4/view?usp=sharing";
+    window.location = "https://drive.google.com/file/d/1U36KHPpZpu18ftFCqGd00wmc3vtFlo71/view?usp=sharing";
 }
 function loadGameHub() {
     window.location = "https://game--hub.vercel.app/";
